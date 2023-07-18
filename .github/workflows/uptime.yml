@@ -11,6 +11,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install Python stuff
-        run: poetry install
+        run: pip install poetry && poetry install
       - name: Run uptime.py
         run: poetry run ./uptime.py
