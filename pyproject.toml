@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "uptime"
+version = "0.1.0"
+description = ""
+authors = ["Philipp Glaum <p@pglaum.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.24.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
