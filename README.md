@@ -6,5 +6,5 @@ check, if your sites are up!
 ## Workflow
 
 - Check the workflow in `.github/workflows/uptime.yml`.
-- Set the repository secret `URLS` as a `|`-separated list of URLs.
+- Set a repository variable `URLS` as a list of URLs (on new lines).
 - Done!

@@ -1,9 +1,11 @@
 name: Run tests
 
 on: push
+  #schedule:
+  #  - cron: '4/15 * * * *'
 
 jobs:
-  run-tests:
+  check-urls:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -14,3 +16,5 @@ jobs:
         run: pip install poetry && poetry install
       - name: Run uptime.py
         run: poetry run ./uptime.py
+        env:
+          URLS: ${{ vars.URLS }}
