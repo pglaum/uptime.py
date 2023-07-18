@@ -4,15 +4,15 @@ import httpx
 import os
 import sys
 
-URLS = os.getenv("URLS", "").split("|")
+URLS = os.getenv("URLS", "").splitlines()
 failed_urls = []
 
 
 def check_url(url):
     try:
         r = httpx.get(url)
+        print(url, r.status_code)
         if r.is_error:
-            print(url, r.status_code)
             failed_urls.append(url)
     except Exception as e:
         print(url, e)
