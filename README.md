@@ -1,7 +1,7 @@
 # uptime.py
 
 `uptime.py` is made to run in github actions as a scheduled workflow and will
-check, if your sites are up!
+check if your sites are up!
 
 ## Workflow
 
